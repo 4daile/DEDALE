@@ -1,0 +1,91 @@
+body {
+    background: transparent !important;
+
+    padding: var(--main-margin);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: var(--main-margin);
+
+    font-family: 'Hanken';
+    font-weight: 400;
+    font-style: italic;
+    font-size: var(--font-title);
+}
+
+
+#infos{
+    grid-column: span 2;
+    background-color:var(--clr-background);
+    color: var(--clr-green);
+    padding: 1em;
+
+    border:solid 1px;
+    border-color: var(--clr-green);
+}
+
+
+.bloc{
+    /*background-color: var(--clr-grille);*/
+    background-color: var(--clr-green);
+
+    color: var(--clr-green);
+    
+    width: 100%;
+    aspect-ratio: 1/1;
+    padding: 1em;
+
+    border:solid 1px;
+    border-color: var(--clr-green);
+}
+
+
+.bloc:hover, .bloc_caption:hover {
+    cursor: pointer;
+    color: var(--clr-survol);
+}
+
+
+.bloc_caption {
+    font-size: var(--main-font-size);
+    
+    align-items: end;
+}
+
+
+.no-content {
+    background-color: var(--clr-background);
+    padding: 1em;
+
+    border:solid 1px;
+    border-color: var(--clr-green);
+    color: var(--clr-green);
+}
+
+
+/** === IMAGES === **/ 
+.bloc{
+    background: var(--clr-background);
+}
+#memoriae_01:hover  {
+    background: url(../src/img/memoriae_1.jpg);
+    background-size: cover;
+}
+
+#memoriae_02:hover {
+    background: url(../src/img/memoriae_2.jpg);
+    background-size: cover;
+}
+#memoriae_03:hover {
+    background: url(../src/img/memoriae_3.jpg);
+    background-size: cover;
+}
+#memoriae_04:hover {
+    background: url(../src/img/memoriae_4.jpg);
+    background-size: cover;
+}
+#memoriae_05:hover {
+    background: url(../src/img/memoriae_5.jpg);
+    background-size: cover;
+}
